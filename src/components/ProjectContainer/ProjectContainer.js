@@ -19,6 +19,8 @@ const style = {
   paddingRight: '5vw',
   display: 'flex',
   flexDirection: 'row',
+  color: '#cdcdff',
+  backgroundColor: '#23283e',
 };
 
 

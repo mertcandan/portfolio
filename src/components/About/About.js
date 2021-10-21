@@ -1,6 +1,5 @@
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import { CloudDownloadSharp } from '@material-ui/icons'
 import { about } from '../../portfolio'
 import './About.css'
 
@@ -11,11 +10,11 @@ const About = () => {
     <div className='about center'>
       {name && (
         <h1>
-          Hi, I am <span className='about__name'>{name}.</span>
+          Hi, I am <span className='about__name'>{name}</span>
         </h1>
       )}
 
-      {role && <h2 className='about__role'>A {role}.</h2>}
+      {role && <h2 className='about__role'>A {role}</h2>}
       <p className='about__desc'>{
         description.map((line) =>
           <p> {line} </p>
