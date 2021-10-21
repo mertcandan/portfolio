@@ -1,0 +1,54 @@
+.project {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.project__description {
+  margin-top: 1em;
+  /*font-family: 'Poppins', sans-serif;*/
+  line-height: 1.5;
+  color: var(--clr-fg);
+  background-color: var(--clr-bg);
+}
+
+.project__stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2em 0;
+}
+
+.project__stack-item {
+  margin: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--clr-fg-alt);
+}
+
+.project .link--icon {
+  margin-left: 0.5em;
+}
+
+.app-icon {
+  margin-top: 0.5em;
+  width: 150px;
+  height: 150px;
+}
+
+.section__title {
+  text-align: center;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.info {
+  width: 30vw;
+  font-family: 'Poppins', sans-serif;
+}
