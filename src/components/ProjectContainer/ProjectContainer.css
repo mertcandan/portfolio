@@ -16,6 +16,22 @@
   line-height: 1.5;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
+  text-align: justify;
+}
+
+.project__short__description {
+  margin-top: 1em;
+  line-height: 1.5;
+  color: var(--clr-fg);
+  background-color: var(--clr-bg);
+}
+
+.project__detail {
+  margin-top: 1em;
+  line-height: 1.5;
+  color: var(--clr-fg);
+  background-color: var(--clr-bg);
+  text-align: left;
 }
 
 .project__stack {

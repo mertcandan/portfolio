@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mertcandan.github.io",
+  "homepage": "https://mertcandan.github.io/portfolio",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -26,7 +26,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "predeploy": "yarn build"
   },
   "browserslist": {
     "production": [

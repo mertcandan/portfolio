@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import PlayCircleIcon from '@material-ui/icons/PlayCircleFilled';
 import './ProjectContainer.css'
-import { Box, Modal, Typography } from '@material-ui/core'
+import { Box, Modal } from '@material-ui/core'
 import ReactPlayer from 'react-player'
 
 const style = {
@@ -21,10 +21,6 @@ const style = {
   flexDirection: 'row',
 };
 
-const infoStyle = {
-  // backgroundColor: 'red',
-  width: '30vw',
-}
 
 const ProjectContainer = ({ project }) => {
   const [isOpen, setOpen] = useState(false);
@@ -51,7 +47,7 @@ const ProjectContainer = ({ project }) => {
                <h4 className='section__title'>Details</h4>
                {
                  project.details.map((detail) =>
-                   <p className='project__description'>{detail}</p>
+                   <li className='project__detail'>{detail}</li>
                  )
                }
              </div>
@@ -64,7 +60,7 @@ const ProjectContainer = ({ project }) => {
         <img src={project.appIcon} alt="app icon" className="app-icon"/>
         <br />
 
-        <p className='project__description'>{project.short_description}</p>
+        <p className='project__short__description'>{project.short_description}</p>
 
         {project.livePreview && (
           <button

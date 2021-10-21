@@ -39,28 +39,41 @@ const projects = [
     name: 'Sunbathing',
     short_description: 'Get the perfect tan',
     description:
-      'This is a game about sunbathing',
+      'A summer themed game where you try to get as much sunlight as possible. ' +
+      'Each level begins with a sunscreen phase, you have to rub the sunscreen fast to move on.' +
+      'Then the tanning phases begin, you have to avoid the shadows to tan the character properly' +
+      'In addition, some random objects may come into play and try to block your sun' +
+      'At the end how much sun tan you got is calculated and a success ratio is determined.',
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
     appIcon: sunbathingIcon,
     videoUrl: "https://vimeo.com/637362033",
     details: [
-      "test",
-      "test",
+      "Development platform: Unity",
+      "Development time: ~3 weeks",
+      "relied heavily on Inverse Kinematics",
+      "contributed heavily to the custom shader created by the Technical Artist",
+      "custom tanning made possible by manipulating vertex color of the mesh",
+      "tan % calculated by finding out the ratio of tanned vertices",
       ],
   },
   {
     name: 'Color Mixer',
     short_description: 'Mix the colors to reach the destination',
     description:
-      'Color mixer desc.',
+      'Each level has a target color as a destination' +
+      'The purpose is to draw a line passing through correct colors to reach the target' +
+      'While passing through each color, the color of the line gradually mixex towards the combination of all colors touched so far' +
+      'If any of the obstacles laying around is touched, you have to start over',
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
     appIcon: colorMixerIcon,
     videoUrl: "https://vimeo.com/615724233",
     details: [
-      "test",
-      "test",
+      "Development platform: Unity",
+      "Development time: ~1 week",
+      "relied on custom shader for showing the drawn line with brush strokes",
+      "color mixing is attempted to represent how water colors actually mix in real life",
       ],
   },
   {
